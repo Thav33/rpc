@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
+
+    <title>Rock Paper Scissors Game</title>
+  </head>
+  <body>
+
+    <header class="header">
+      <h1>Rock Paper Scissors Game</h1>
+    </header>
+
+    <div class="container">
+        <div class="score-container">
+          <span class="userScore">USER</span>
+          <span class="score"></span>
+          <span class="compScore">COMPUTER</span>
+        </div>
+        <div>
+
+         <span class="result"> </span>
+        </div>
+
+        <div class="buttons">
+          <button id="rock" class="btn" onclick="game(this.value)" value="rock"><i class="far fa-hand-rock"></i></button>
+          <button id="paper" class="btn" onclick="game(this.value)" value="paper"><i class="far fa-hand-paper"></i></button>
+          <button id="scissors" class="btn" onclick="game(this.value)" value="scissors"> <i class="far fa-hand-scissors"></i></button>
+       </div>
+
+       <div id="challenge">
+         <div id="you">
+             <div class="userObject"></div>
+             <div class="who">User</div>
+         </div>
+
+         <!-- <span class="result"> </span> -->
+
+         <div id="com">
+             <div class="compObject"></div>
+             <div class="who">Computer</div>
+         </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
